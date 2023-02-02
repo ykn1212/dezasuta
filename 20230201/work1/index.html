@@ -12,18 +12,37 @@
 
     <script>
 
-        let flag = true;
+        // 一番簡単な書き方
         let num = 0;
-        let num2 = 1;
-        while (flag) {
-            for (i = 0; i < 10; i++) {
-                num = num + num2;
-                num2 = num2 + 1;
-            }
-            if (num2 = 10) {
-                flag = false;
-            }
+        for (i = 0; i < 11; i++) {
+            num = num + i;
         }
+
+        // 元をベースにwhileを消したもの
+        // let flag = true;
+        // let num = 0;
+        // let num2 = 1;
+        // for (i = 0; i < 10; i++) {
+        //     num = num + num2;
+        //     num2 = num2 + 1;
+        // }
+        // if (num2 = 10) {
+        //     flag = false;
+        // }
+
+        // 修正前
+        // let flag = true;
+        // let num = 0;
+        // let num2 = 1;
+        // while (flag) {
+        //     for (i = 0; i < 10; i++) {
+        //         num = num + num2;
+        //         num2 = num2 + 1;
+        //     }
+        //     if (num2 = 10) {
+        //         flag = false;
+        //     }
+        // }
 
         if (num >= 20) {
             console.log('20以上');
