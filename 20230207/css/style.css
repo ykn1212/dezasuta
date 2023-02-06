@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+/* cssリセット */
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+body{
+    background-color: #e8d9bf;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%; /* 最大値は画像自体の横幅 */
+    vertical-align: bottom;
+    border: none;
+}
+
+/* cssリセット END */
+/* -------------------------------------- */
+/* ヘッダー */
+
+.header_wrap {
+    display: flex; /* 横並びにする */
+    justify-content: space-between;
+    /* flexboxアイテムの配置する位置を指定 */
+    /* space-between　最初を開始点、最後を終了点に、残りは均等に配置 */
+    align-items: center; /* flexboxアイテムのクロス軸に沿って配置する位置を指定 */
+    padding: 10px 6.53% 0 2.51%; /* widthの外側の余白 */
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; /* paddingをwidth:100%に含める */
+}
+
+.header_wrap .logo {
+    width: 226.7px;
+}
+
+.pc_nav ul{
+    display: flex;
+}
+
+.pc_nav ul li {
+    width: 105px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    margin-right: 54px;
+}
+
+.pc_nav ul li:last-child {
+    margin-right: 0;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* -------------------------------------- */
+/* コンテンツ */
+section {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto 108px;
+}
+
+h2 {
+    margin: 0 auto 60px;
+}
+
+/* キャッチコピー */
+.copy_wrap {
+    background-color: #e8d9bf;
+    padding-top: 107px;
+    text-align: center;
+}
+
+.copy_small {
+    font-size: 30px;
+    margin-bottom: 43.3px;
+}
+
+.copy_big {
+    font-size: 84px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    margin-bottom: 44px;
+}
+
+.copy_text {
+    font-size: 23px;
+    line-height: 1.65;
+    letter-spacing: 0.08em;
+}
+
+
+/* アバウト */
+.aboutus_wrap {
+    display: flex; /* 横並びにする */
+    justify-content: space-between;
+}
+
+.aboutus_img img {
+    width: 500%;
+    border-bottom-right-radius: 82px;
+}
+
+.aboutus_text {
+    width: 40%;
+}
+
+.aboutus_text h2 {
+    width: 272px;
+    margin-bottom: 60px;
+}
+
+.aboutus_text h3 {
+    font-size: 44px;
+    font-weight: unset;
+    line-height: 1.38;
+    margin-bottom: 36px;
+}
+
+.aboutus_text div{
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+/* メニュー */
+.menu_wrap h2 {
+    width: 151px;
+}
+
+.menu {
+	width: 100%;
+    display: flex; /* 横並びにする */
+    justify-content: space-between;
+}
+
+.menu > *{
+	width: calc( 34% - 49px ) ;
+}
+
+
+.menu li {
+    font-size: 17px;
+}
+
+.menu_title {
+    font-size: 38px;
+    color: #d30202;
+    margin-top: -13px;
+    padding-left: 14px;
+    margin-bottom: 25px;
+}
+
+.menu_img img {
+    border-top-right-radius: 41px;
+}
+
+.menu_text {
+    width: 100%;
+    line-height: 1.47;
+}
+
+
+/* ギャラリー */
+.gallery_wrap {
+    max-width: initial;
+    padding:0 0;
+    margin-bottom:70px;
+}
+
+.gallery_wrap h2 {
+    width: 245px;
+    margin-bottom: 26px;
+}
+
+.gallery {
+    width: 100%;
+	display: flex;
+}
+
+.gallery > *{
+	width: calc( 25% - 0px ) ;
+	margin: 0;
+}
+
+
+/* イベント */
+.event_wrap {
+    margin-bottom: 79px;
+}
+
+.event_wrap h2 {
+    width: 173px;
+    margin-bottom: 40px;
+}
+
+.event {
+    background-color: #fff;
+    border: 1.3mm solid #4f260b;
+}
+
+.event ul {
+    margin: 38px auto 43px;
+    width: 100%;
+}
+
+.event li {
+    padding-bottom:22px;
+    text-align: center;
+}
+
+.event_list {
+    font-size: 23px;
+    width: 100%;
+    display: flex;
+    margin-left:158px;
+}
+
+.event_list > p {
+    padding-right: 56px;
+}
+
+.event_list > a {
+    text-decoration: underline;
+    padding-left: 0px;
+}
+
+.event li:last-child {
+    padding-bottom:0;
+}
+
+
+/* アクセス */
+.access_wrap {
+    max-width: initial;
+    padding:0 0;
+    margin-bottom:0px;
+}
+
+.access_wrap h2 {
+    width: 213px;
+    margin-bottom: 47px;
+}
+
+.access_wrap {
+	display: block;
+}
+
+.access_wrap iframe {
+    width: 100%;
+    height: 472px;
+}
+
+
+/* フッター */
+footer {
+    width: 100%;
+    background-color: #fff;
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer_wrap {
+    width: 1000px;
+    padding: 82px 10px 80px;
+    margin: 0 auto 0;
+}
+
+.footer_about {
+    display: flex;
+    line-height: 1.95;
+}
+
+.footer_about h2 {
+    width: 226px;
+    margin-right: 68px;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 17px;
+    margin: 75px auto 0;
+    text-align: center;
+}
+
+
+
+/* Topへボタン */
+.toTop {
+    width: 125px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+
+
+@media screen and (max-width:1000px){
+    
+
+
+}
