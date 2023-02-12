@@ -142,20 +142,27 @@ h2 {
 .aboutus_wrap {
     display: flex; /* 横並びにする */
     justify-content: space-between;
+    align-items: center;
+}
+
+.aboutus_img {
+    width: 50%;
 }
 
 .aboutus_img img {
-    width: 500%;
+    width: 100%;
     border-bottom-right-radius: 82px;
 }
 
 .aboutus_text {
     width: 40%;
+
 }
 
 .aboutus_text h2 {
     width: 272px;
     margin-bottom: 60px;
+    margin-left: 0;
 }
 
 .aboutus_text h3 {
@@ -179,15 +186,11 @@ h2 {
 	width: 100%;
     display: flex; /* 横並びにする */
     justify-content: space-between;
+    font-size: 17px;
 }
 
 .menu > *{
-	width: calc( 34% - 49px ) ;
-}
-
-
-.menu li {
-    font-size: 17px;
+	width:30%;
 }
 
 .menu_title {
@@ -244,11 +247,12 @@ h2 {
 .event {
     background-color: #fff;
     border: 1.3mm solid #4f260b;
+    display: flex;
+    justify-content: center;
 }
 
 .event ul {
     margin: 38px auto 43px;
-    width: 100%;
 }
 
 .event li {
@@ -259,7 +263,7 @@ h2 {
 .event_list {
     font-size: 23px;
     display: flex;
-    margin-left:158px;
+    text-align: left;
 }
 
 .event_list > p {
@@ -314,6 +318,10 @@ footer {
 
 .footer_about {
     display: flex;
+    line-height: 1.95;
+}
+
+.footer_about li {
     line-height: 1.95;
 }
 
