@@ -246,11 +246,18 @@
         <a href="#top"><img src="img/to_top@2x.png" alt="トップへ"></a>
     </div>
 
+
     <script>
         $(function () {
             $('.hamberger').on('click', function () {
                 $('.sp_nav').fadeToggle();
                 $('.hamberger').toggleClass('open');
+            });
+        });
+        $(function () {
+            $('.sp_nav ul li a').on('click', function () {
+                $('.sp_nav ul').toggleClass();
+                $('.hamberger').removeClass('open');
             });
         });
     </script>
