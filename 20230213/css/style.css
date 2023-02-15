@@ -116,11 +116,15 @@ body{
 section {
     max-width: 1000px;
     padding: 0 10px;
-    margin: 0 auto 108px;
+    margin: 0 auto 90px;
+}
+
+.br-sp {
+    display: none;
 }
 
 h2 {
-    margin: 0 auto 60px;
+    margin: 0 auto;
 }
 
 /* キャッチコピー */
@@ -200,6 +204,7 @@ h2 {
 /* メニュー */
 .menu_wrap h2 {
     width: 151px;
+    margin-bottom: 48px;
 }
 
 .menu {
@@ -235,12 +240,12 @@ h2 {
 .gallery_wrap {
     max-width: initial;
     padding:0 0;
-    margin-bottom:70px;
+    margin-bottom:80px;
 }
 
 .gallery_wrap h2 {
     width: 245px;
-    margin-bottom: 26px;
+    margin-bottom: 48px;
 }
 
 .gallery {
@@ -256,12 +261,12 @@ h2 {
 
 /* イベント */
 .event_wrap {
-    margin-bottom: 79px;
+    margin-bottom: 80px;
 }
 
 .event_wrap h2 {
     width: 173px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 
 .event {
@@ -303,8 +308,8 @@ h2 {
 /* アクセス */
 .access_wrap {
     max-width: initial;
-    padding:0 0;
-    margin-bottom:0px;
+    padding:0;
+    margin-bottom:0;
 }
 
 .access_wrap h2 {
@@ -378,8 +383,7 @@ footer {
     .hamberger {
         display: block;
         position: absolute;
-        top:25px;
-        right:40px;
+        right:24px;
         cursor: pointer;
         height:33px;
         z-index: 9999;
@@ -485,8 +489,8 @@ footer {
 
     .aboutus_wrap h2.sp{
         display: block;
-        width: 273px;
-        margin-bottom: 60px;
+        width: 272px;
+        margin-bottom: 48px;
     }
 
     .aboutus_text h3 {
@@ -497,35 +501,66 @@ footer {
 
 @media screen and (max-width:767px){
 
-    .slider img {
-        width: 100%;
-    }
+section {
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+.br-sp {
+    display: block;
+}
+
+.header_wrap .logo {
+    width: 187.5px;
+}
+
+.slider img {
+    width: 100%;
+}
 
 
 /* キャッチコピー */
+.copy_wrap {
+    padding-top: 42px;
+    text-align: center;
+}
+
 .copy_small {
-    font-size: 20px;
+    font-size: 17px;
+    margin-bottom: 27px;
 }
 
 .copy_big {
-    font-size: 52px;
+    font-size: 37px;
+    letter-spacing: 0;
+    margin-bottom: 23px;
 }
 
 .copy_text {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.85;
 }
+
 
 /* アバウト */
 .aboutus_wrap{ 
     padding:0 0;
+    margin-top: 64px;
 }
+
+.aboutus_wrap h2.sp{
+    display: block;
+    width: 160px;
+    margin-bottom: 20px;
+}
+
 .aboutus {
     display: block;
 }
 
 .aboutus_text {
     width: initial;
-    padding: 38px 20px 32px;
+    padding: 38px 20px 54px;
 }
 
 .aboutus_img {
@@ -549,7 +584,8 @@ footer {
 
 /* メニュー */
 .menu_wrap h2 {
-    width: 151px;
+    width: 87px;
+    margin-bottom: 20px;
 }
 
 .menu {
@@ -557,7 +593,7 @@ footer {
     justify-content: space-between;
     font-size: 17px;
     width: initial;
-    padding: 0 37px;
+    padding: 0 27px;
 }
 
 .menu > *{
@@ -565,11 +601,11 @@ footer {
 }
 
 .menu_title {
-    font-size: 45px;
+    font-size: 40px;
     color: #d30202;
     margin-top: -13px;
     padding-left: 14px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .menu img {
@@ -580,28 +616,99 @@ footer {
 .menu_text {
     width: 100%;
     font-size: 17px;
-    line-height: 1.23;
+    line-height: 1.57;
     margin-bottom: 60px;
 }
 
+
+/* ギャラリー */
+.gallery_wrap {
+    max-width: initial;
+    padding:0 0;
+    margin-bottom:34px;
+}
+
+.gallery_wrap h2 {
+    width: 142px;
+    margin-bottom: 20px;
+}
+
+
 /* イベント */
+.event_wrap {
+    margin-bottom: 32px;
+    padding: 0 20px;
+}
+
+.event_wrap h2 {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.event {
+    background-color: #fff;
+    border: 1.3mm solid #4f260b;
+    display: block;
+    justify-content: center;
+    padding-left: 28px;
+    padding-right: 20px;
+}
+
 .event ul {
-    margin: 38px auto 43px;
+    margin: 22px auto 18px;
 }
 
 .event li {
-    padding-bottom:28px;
+    padding-bottom:22px;
+    text-align: center;
 }
 
 .event_list {
+    font-size: 16px;
     display: block;
+    text-align: left;
+}
+
+.event_list > p {
+    padding-right: 56px;
+}
+
+.event_list > a {
+    text-decoration: underline;
+    padding-left: 0px;
+}
+
+.event li:last-child {
+    padding-bottom:0;
 }
 
 .event_list a {
-    max-width: 300px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    display: block;
+}
+
+
+/* アクセス */
+.access_wrap {
+    max-width: initial;
+    padding:0 0;
+    margin-bottom:0px;
+}
+
+.access_wrap h2 {
+    width: 124px;
+    margin-bottom: 20px;
+}
+
+.access_wrap {
+	display: block;
+}
+
+.access_wrap iframe {
+    width: 100%;
+    height: 190px;
 }
 
 /* フッター */

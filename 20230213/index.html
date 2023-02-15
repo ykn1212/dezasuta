@@ -71,8 +71,8 @@
             1杯のコーヒーから。
         </div>
         <p class="copy_text">
-            毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-            足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+            毎日を丁寧に大切に過ごしたい。<br class="br-sp">だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+            足を運んでくれるお客さんには落ち着く空間と<br class="br-sp">こだわりのコーヒーを提供したい。
         </p>
 
     </section>
@@ -221,7 +221,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10174.052677020734!2d139.70563337515534!3d35.6639468701277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dcc7bb6fabf%3A0x29beb331790b0fa4!2z44Kz44OU44Kr44Oq44Ki44OzIOadseS6rA!5e0!3m2!1sja!2sjp!4v1675648379233!5m2!1sja!2sjp"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-
     </section>
 
     <footer>
@@ -249,19 +248,15 @@
 
     <script>
         $(function () {
-            $('.hamberger').on('click', function () {
+            $('.hamberger,.sp_nav ul li a').on('click', function () {
                 $('.sp_nav').fadeToggle();
                 $('.hamberger').toggleClass('open');
             });
         });
-        $(function () {
-            $('.sp_nav ul li a').on('click', function () {
-                $('.sp_nav ul').toggleClass();
-                $('.hamberger').removeClass('open');
-            });
-        });
     </script>
 
+
+    <!-- スライダー -->
     <script>
         $(function () {
             $(".js_slider").slick({
