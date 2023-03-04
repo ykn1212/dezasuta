@@ -100,9 +100,20 @@ body{
 }
 
 
+/* スライダー */
 .slider {
     width: 100%;
     margin: 0;
+}
+
+.slick-dots {
+    bottom: 30px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+    font-size: 16px;
 }
 
 .sp_nav,
@@ -248,15 +259,13 @@ h2 {
     margin-bottom: 48px;
 }
 
-.gallery {
+
+/* ギャラリー */
+.slider_g {
+    display: flex;
     width: 100%;
-	display: flex;
 }
 
-.gallery img{
-	max-width: 100% ;
-	margin: 0;
-}
 
 
 /* イベント */
@@ -632,6 +641,11 @@ section {
     margin-bottom: 20px;
 }
 
+/* ギャラリー */
+.slider_g img{
+    display: block;
+    width: 100%;
+}
 
 /* イベント */
 .event_wrap {
